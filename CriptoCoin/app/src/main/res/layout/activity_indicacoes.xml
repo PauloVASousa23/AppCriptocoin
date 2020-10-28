@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/azulLight">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/custom_box_lighterblue"
+            android:padding="20dp"
+            android:layout_margin="20dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cadastrar indicação"
+                android:textSize="24dp"
+                android:textColor="@color/azulPrimary"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                >
+            </TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="2dp"
+                    android:background="@color/azulPrimary"
+                    android:layout_gravity="center"
+                    ></ImageView>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Data"
+                android:textSize="18dp"
+                android:textColor="@color/azulPrimary"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                />
+            <EditText
+                android:id="@+id/inputData_cadastrar_indicacao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_input_semi_rounded"
+                android:paddingVertical="5dp"
+                android:paddingHorizontal="20dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Criptomoeda"
+                android:textSize="18dp"
+                android:textColor="@color/azulPrimary"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                />
+            <EditText
+                android:id="@+id/inputCriptomoeda_cadastrar_indicacao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_input_semi_rounded"
+                android:paddingVertical="5dp"
+                android:paddingHorizontal="20dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Observação"
+                android:textSize="18dp"
+                android:textColor="@color/azulPrimary"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                />
+            <EditText
+                android:id="@+id/inputObservacao_cadastrar_indicacao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_input_semi_rounded"
+                android:paddingVertical="5dp"
+                android:paddingHorizontal="20dp"
+                android:lines="6"
+                android:gravity="top|left"
+                />
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_box_alert_warning"
+                android:textAlignment="center"
+                android:textSize="16dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/branco"
+                android:textStyle="bold"
+                android:text="A indicação terá duração de 48 horas após a data cadastrada!"
+                android:padding="8dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    >
+                    <Button
+                        android:id="@+id/btnLimpar_cadastrar_indicacao"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="Limpar"
+                        android:background="@drawable/custom_button_rounded_vermelho"
+                        android:paddingVertical="5dp"
+                        android:paddingHorizontal="15dp"
+                        android:textColor="@color/branco"
+                        android:textStyle="bold"
+                        android:layout_marginRight="10dp"
+                        android:layout_gravity="center"
+                        />
+                    <Button
+                        android:id="@+id/btnCadastrar_cadastrar_indicacao"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:text="Cadastrar"
+                        android:background="@drawable/custom_button_rounded_azulprimary"
+                        android:paddingVertical="5dp"
+                        android:paddingHorizontal="15dp"
+                        android:textColor="@color/branco"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="10dp"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/custom_bottom_navigation_bar"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:id="@+id/llbtnClientes"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".20"
+            android:orientation="horizontal"
+            android:background="@drawable/custom_bottom_navigation_item"
+            android:clickable="true"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:background="@mipmap/icone_clientes"></ImageView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llbtnTransacoes"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".20"
+            android:orientation="horizontal"
+            android:background="@drawable/custom_bottom_navigation_item"
+            android:clickable="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="46dp"
+                    android:layout_height="49dp"
+                    android:layout_gravity="center"
+                    android:background="@mipmap/icone_transacoes"></ImageView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llbtnRelatorios"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".20"
+            android:orientation="horizontal"
+            android:background="@drawable/custom_bottom_navigation_item"
+            android:clickable="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:background="@mipmap/icone_relatorios"></ImageView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llbtnMonitoramento"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".20"
+            android:orientation="horizontal"
+            android:background="@drawable/custom_bottom_navigation_item"
+            android:clickable="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:background="@mipmap/icone_monitoramento"></ImageView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llbtnIndicacoes"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".20"
+            android:orientation="horizontal"
+            android:background="@drawable/custom_card_azul_escuro"
+            android:clickable="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:background="@mipmap/icone_indicacoes"></ImageView>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

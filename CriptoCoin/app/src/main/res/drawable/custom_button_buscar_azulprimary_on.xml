@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <corners android:radius="20dp">
+            </corners>
+            <solid android:color="@color/azulPrimaryPress"></solid>
+            <padding android:top="15dp" android:right="15dp" android:bottom="15dp" android:left="15dp"></padding>
+        </shape>
+    </item>
+    <item android:drawable="@mipmap/icone_procurar"></item>
+</layer-list>

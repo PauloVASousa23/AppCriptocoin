@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pim.criptocoin">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".cliente.IndicacoesClienteActivity"></activity>
+        <activity android:name=".cliente.RelatorioClienteActivity" />
+        <activity android:name=".cliente.TransacoesClienteActivity" />
+        <activity android:name=".cliente.MovimentarContaActivity" />
+        <activity android:name=".cliente.MonitoramentoClienteActivity" />
+        <activity android:name=".agencia.AlterarClienteActivity" />
+        <activity android:name=".agencia.IndicacoesActivity" />
+        <activity android:name=".agencia.MonitoramentoActivity" />
+        <activity android:name=".agencia.RelatoriosActivity" />
+        <activity android:name=".agencia.TransacoesActivity" />
+        <activity android:name=".agencia.CadastrarClienteActivity" />
+        <activity android:name=".agencia.ConsultarClienteActivity" />
+        <activity android:name=".admin.AdminActivity" />
+        <activity android:name=".cliente.ClienteActivity" />
+        <activity android:name=".agencia.AgenciaActivity" />
+        <activity
+            android:name=".CadastroActivity"
+            android:label="@string/title_activity_cadastro" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
